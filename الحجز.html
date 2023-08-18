@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="style.css"/>
     <title>موقع عيادات العشري - الحجز</title>
 </head>
 <body>
+<h1 class="welcoming">الحجز</h1>
 <form action="https://formspree.io/f/xqkvqzde" method="POST">
-<input type="text" name="الاسم الاول" id="الاسم الاول" placeholder="اسم الاول" required>
+<input type="text" name="الاسم الاول" id="الاسم الاول" placeholder="اسم الاول" lang="ar" dir="rtl" required>
 <h1></h1>
-<input type="text" name="اسم العائلة" id="اسم العائلة" placeholder="اسم العائلة" required>
+<input type="text" name="اسم العائلة" id="اسم العائلة" placeholder="اسم العائلة" lang="ar" dir="rtl" required>
 <h1></h1>
 <select name="التخصص" class="custom-select" required>
     <option value="" selected disabled hidden>اختر تخصص</option>
-    <option>اطفال</option>
-    <option>اسنان</option>
-    <option>باطنة</option>
-    <option>جراحة</option>
-    <option></option>
-    <option></option>
-    <option></option>
-    <option></option>
-    <option></option>
+    <option>اطفال | د/فاروق سعد | الساعه 5 | الكشف 30 جنيه</option>
+    <option>اسنان | د/محمد المعداوي | الساعه 5| الكشف 25 جنيه</option>
+    <option disabled>[غير موجود] باطنة</option>
+    <option disabled>جراحة [غير موجود]</option>
+    <option disabled>جلدية [غير موجود]</option>
+    <option>علاج طبيعي | ا/المهدي | الساعه 5 | الجلسه 30 جنيه</option>
+    <option>النساء والتوليد | د/رضا الشريفه | الساعه 5 | الكشف 50 جنيه</option>
+    <option>الانف والاذن والحنجرة | د/محمد سلامة | الساعه 4.30 | الكشف 40 جنيه</option>
+    <option>الرجيم | الساعه 5 | الكشف 35 جنيه | المتابعة 30 جنيه</option>
   </select>
-  
+  <h1></h1>
+  <input type="submit" value="ارسال" class="buttonsub">
+   <hr>
+<Footer>
+  <p>للحجز والاستفسارات ت 01555506205 / 2749583</p>
+</Footer>
 
 
 </form>
