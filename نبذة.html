@@ -7,9 +7,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
     <script>
         function initMap() {
-            var position = {lat: null, lng: null}
+            // Unset position
+            var position = {lat: null, lng: null};
             var map = new google.maps.Map(document.getElementById('map'), {zoom: 5, center: position});
-
             var marker = new google.maps.Marker({position: position, map: map});
         }
     </script>
