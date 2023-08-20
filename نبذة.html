@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY">// API KEY (unset)</script>
     <script>
+        // Prepare the map
         function initMap() {
-            // Unset position
-            var position = {lat: null, lng: null};
+            // The map center position (unset)
+            var position = { lat: null, lng: null };
+            /* Create the map */                                    /* Zoom level */
             var map = new google.maps.Map(document.getElementById('map'), {zoom: 5, center: position});
+            // Add a marker to the map
             var marker = new google.maps.Marker({position: position, map: map});
         }
     </script>
     <title>نبذة عن عيادات العشري</title>
-    <p></p>
 </head>
 <body onload="initMap()">
     <h1 class="welcoming">نبذة عن عيادات العشري</h1>
