@@ -126,4 +126,6 @@ img {
 
 .font-change-big {
   font-size: 480%;
+  display: flex;
+  justify-content: center;
 }
