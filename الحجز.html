@@ -13,9 +13,9 @@
 <h1 class="welcoming">الحجز</h1>
 <form action="https://formsubmit.io/send/a6d89ef0-bc17-4b54-ac2d-28f6073cea4a" method="POST">
   <input type="hidden" name="_redirect" value="https://elashryclinic.github.io/ElashryClinic/index.html">
-<input type="text" name="الاسم الثلاثي" id="الاسم الثلاثي" placeholder="الاسم الثلاثي" lang="ar" dir="rtl" required>
+<input type="text" name="الاسم الثلاثي" id="الاسم الثلاثي" placeholder="الاسم الثلاثي" lang="ar" dir="ltr" required>
 <h1></h1>
-<input type="tel" name="phone" required id="phone" placeholder="رقم الهاتف" dir="rtl">
+<input type=“tel” name=“رقم الهاتف” required id=“رقم الهاتف” placeholder="رقم الهاتف" dir=“rtl” inputmode=“numeric” pattern=“[0-9]+” onkeypress="return isNumberKey(event)">
 <h1></h1>
 <select name="التخصص" class="custom-select" required>
     <option value="" selected disabled hidden>اختر تخصص</option>
@@ -41,5 +41,13 @@
   <h1></h1>
   <a href="index.html">الرجوع الى الصفحة الرئيسية</a>
 </Footer>
+<script>
+  function isNumberKey(evt) {
+  var charCode = (evt.which) ? evt.which : evt.keyCode
+  if (charCode > 31 && (charCode < 48 || charCode > 57))
+    return false;
+  return true;
+}
+</script>
 </body>
 </html>
