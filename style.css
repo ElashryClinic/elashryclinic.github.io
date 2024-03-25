@@ -23,7 +23,7 @@ input {
 
     height: 20px;
 
-    border-radius: 15%;
+    border-radius: 10px;
 
     border: 2px solid black;
 
@@ -59,7 +59,7 @@ input {
     width: 200px;
     height: 30px;
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 5px;
     cursor: pointer;
   }
 
@@ -111,7 +111,7 @@ p {
 .buttonsub {
   width: 120px;
   height: 40px;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .mf {
@@ -119,8 +119,10 @@ p {
 }
 
 img {
-  border-radius: 5%;
-  width: 100%;
+  border-radius: 5px;
+  width: 80%;
+  display: flex;
+  margin: auto;
   height: 100%;
 }
 
