@@ -115,10 +115,20 @@ img {
 .images {
   border-radius: 90px;
   background-color: rgba(237, 231, 120, 0.384);
+  width: 90%;
+  margin: auto;
 }
 
 .mainlink {
   color: rgb(115, 230, 255);
+}
+
+.mainlink:hover {
+  color: yellowgreen;
+}
+
+a:hover {
+  color: yellowgreen;
 }
 
 @media (max-width: 768px) {

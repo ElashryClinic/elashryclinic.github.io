@@ -12,10 +12,10 @@
 <body>
 <h1 class="welcoming">الحجز</h1>
 <form action="https://formsubmit.io/send/a6d89ef0-bc17-4b54-ac2d-28f6073cea4a" method="POST">
-  <input type="hidden" name="_redirect" value="https://elashryclinic.github.io/ElashryClinic/index.html">
+  <input type="hidden" name="_redirect" value="https://elashryclinic.github.io/index.html">
 <input type="text" name="الاسم الثلاثي" id="الاسم الثلاثي" placeholder="الاسم الثلاثي" lang="ar" dir="ltr" required>
 <h1></h1>
-<input type=“tel” name=“رقم الهاتف” required id=“رقم الهاتف” placeholder="رقم الهاتف" dir=“rtl” inputmode=“numeric” pattern=“[0-9]+” onkeypress="return isNumberKey(event)">
+<input type="tel" name="رقم الهاتف" required id="رقم الهاتف" placeholder="رقم الهاتف" dir=“rtl” inputmode=“numeric” onkeypress="return isNumberKey(event)">
 <h1></h1>
 <select name="التخصص" class="custom-select" required>
     <option value="" selected disabled hidden>اختر تخصص</option>
@@ -32,7 +32,7 @@
     <option>العيون | نظارة طبية</option>
   </select>
   <h1></h1>
-  <input type="submit" value="ارسال" class="buttonsub">
+  <input type="submit" value="ارسال" class="buttonsub" onsubmit="sendToWhatsApp()">
 </form>
 <Footer>
   <hr>
@@ -43,7 +43,16 @@
   <h1></h1>
   <a href="index.html">الرجوع الى الصفحة الرئيسية</a>
 </Footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <script src="style.js"></script>
+<script src="index.js"></script>
 <script>
   function isNumberKey(evt) {
   var charCode = (evt.which) ? evt.which : evt.keyCode
