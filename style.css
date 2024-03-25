@@ -116,3 +116,18 @@ img {
   border-radius: 90px;
   background-color: rgba(237, 231, 120, 0.384);
 }
+
+.mainlink {
+  color: rgb(115, 230, 255);
+}
+
+@media (max-width: 768px) {
+  ul {
+      flex-direction: column;
+      text-align: center;
+  }
+  .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
