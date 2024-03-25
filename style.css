@@ -7,7 +7,7 @@ html {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: brown;
     font-weight: bold;
     font-size: 172%;
