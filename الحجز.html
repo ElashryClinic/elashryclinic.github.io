@@ -11,8 +11,8 @@
 </head>
 <body>
 <h1 class="welcoming">الحجز</h1>
-<form id="form" action="javascript:sendEmail()">
-<input type="text" pattern="[\u0600-\u06FF\u0750-\u077F]+" name="الاسم الثلاثي" id="الاسم الثلاثي" placeholder="الاسم الثلاثي" lang="ar" dir="ltr" required>
+<form id="form" action="javascript:sendEmail()" onsubmit="mainMenu()">
+<input type="text" pattern="[\u0600-\u06FF\u0750-\u077F]+" minlength="10" name="الاسم الثلاثي" id="الاسم الثلاثي" placeholder="الاسم الثلاثي" lang="ar" dir="ltr" required>
 <h1></h1>
 <input type="tel" name="رقم الهاتف" required id="رقم الهاتف" placeholder="رقم الهاتف" maxlength="20" minlength="7" dir=“rtl” inputmode=“numeric” onkeypress="return isNumberKey(event)">
 <h1></h1>
@@ -31,7 +31,7 @@
     <option>العيون | نظارة طبية</option>
   </select>
   <h1></h1>
-  <input type="submit" value="ارسال" class="buttonsub" onclick="sendEmail()">
+  <input type="submit" value="ارسال" class="buttonsub">
 </form>
 <Footer>
   <hr>
@@ -60,22 +60,6 @@
 }
 </script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-function sendEmail()
-  {
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "elashryclinic@gmail.com",
-      Password: "719D95FB23012B20FE8CFA4667E8C3369096",
-      To: "elashryclinic@gmail.com",
-      From: "elashryclinic@gmail.com",
-      Subject : "عملية حجز جديدة من خلال موقع عيادات العشري",
-      Body : `<h4>حدثت عملية حجز جديدة بموقع عيادات العشري بالتفاصيل الآتية</h4>:<br><h2>الاسم:</h2><h1>${document.getElementById('الاسم الثلاثي').value}</h1><br><h2>رقم الهاتف:</h2><h1>${document.getElementById('رقم الهاتف').value}</h1><br><h2>التخصص:</h2><h1>${document.getElementById('التخصص').options[document.getElementById('التخصص').selectedIndex].text}</h1>`
-  }).then(
-    message => console.log(message),
-    window.location.href = 'https://elashryclinic.github.io/'
-  );
-}
-</script>
+<script src="index.js"></script>
 </body>
 </html>
