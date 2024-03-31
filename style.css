@@ -141,3 +141,7 @@ a:hover {
       margin-bottom: 10px;
   }
 }
+
+.paused {
+  text-decoration: line-through;
+}
