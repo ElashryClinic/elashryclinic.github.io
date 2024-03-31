@@ -3,7 +3,7 @@ function sendEmail()
     Email.send({
       Host: "smtp.elasticemail.com",
       Username: "elashryclinic@gmail.com",
-      Password: "719D95FB23012B20FE8CFA4667E8C3369096",
+      Password: "DE16E607D2E5709077CF6419124DC5404BB4",
       To: "elashryclinic@gmail.com",
       From: "elashryclinic@gmail.com",
       Subject : "عملية حجز جديدة من خلال موقع عيادات العشري",
