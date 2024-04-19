@@ -16,3 +16,8 @@ function sendEmail()
 function mainMenu() {
   window.location.href = 'https://elashryclinic.github.io/';
 }
+
+if (sendEmail())
+{
+  mainMenu();
+}
